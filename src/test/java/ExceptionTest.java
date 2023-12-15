@@ -12,6 +12,9 @@ public class ExceptionTest {
 
         Assertions.assertDoesNotThrow(() -> transferenciaEntreContas.transfere(contaOrigem, contaDestino, 20));
 
+        Assertions.assertDoesNotThrow(() -> SaqueConta.saca(contaOrigem, 0));
+
+//        Assertions.assertDoesNotThrow(() -> SaqueConta.saca(contaOrigem, 100));
         //Assertions.assertThrows(IllegalArgumentException.class,
           //      () -> transferenciaEntreContas.transfere(contaOrigem, contaDestino, -1));
     }
